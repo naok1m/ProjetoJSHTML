@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@media screen and (min-width: 800px) {
+    .container {
+        background-color: rgba(30, 30, 30, 0.4); /* Mais transparente */
+        position: relative;
+        padding: 50px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(170, 100, 255, 0.2); /* leve glow lilás */
+        max-width: 500px;
+        margin: auto;
+        margin-top: 10vh;
+        animation: flutuar 3s ease-in-out infinite;
+        cursor: move;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1); /* toque de leve contorno */
+    }
+    
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.85); 
+    text-shadow: 0 0 4px rgba(186, 146, 255, 0.3);/* Cor do título em branco */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.relogio {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #ffffff; /* Texto branco para boa visibilidade */
+    animation: fadeIn 1s ease-out;
+    letter-spacing: 2px;
+    background-color: rgba(18, 18, 18, 0); /* Fundo mais escuro com opacidade */
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Sombra mais forte para contraste */
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    background-color: #333333; /* Cor de fundo mais escura para os botões */
+    color: #ffffff; /* Texto em branco */
+}
+
+button:hover {
+    background-color: #555555; /* Cor mais suave ao passar o mouse */
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.pausado {
+    color: red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.85);
+    background: linear-gradient(to bottom right, #000000, #2c003e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+div {
+    background-color: rgba(30, 30, 30, 0.4); /* Mais transparente */
+        position: relative;
+        padding: 50px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(170, 100, 255, 0.2); /* leve glow lilás */
+        max-width: 500px;
+        margin: auto;
+        margin-top: 10vh;
+        animation: flutuar 3s ease-in-out infinite;
+        cursor: move;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1); /* toque de leve contorno */
+    }
+
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.INICIAR {
+    background-color: #0c581c; /* Cor escura e suave */
+    color: #ffffff;
+}
+
+.INICIAR:hover {
+    background-color: #0c581c; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05);
+}
+
+.PAUSAR {
+    background-color: #ca6e27; /* Cor suave de laranja escuro */
+    color: #ffffff;
+}
+
+.PAUSAR:hover {
+    background-color: #9c602d; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05);
+}
+
+.REDEFINIR {
+    background-color: #851717; /* Cor suave de vermelho escuro */
+    color: #ffffff;
+}
+
+.REDEFINIR:hover {
+    background-color: #7f3232; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05);
+}
+
+.HOME-BTN {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 12px 25px;
+    margin: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.HOME-BTN:hover {
+    background-color: #ffffff; /* Cor mais suave ao passar o mouse */
+    transform: scale(1.05);
+}
