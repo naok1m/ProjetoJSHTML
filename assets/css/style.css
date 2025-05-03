@@ -84,7 +84,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.85);
     background: linear-gradient(to bottom right, #000000, #2c003e);
-    display: flex;
+    display: list-item;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -94,11 +94,11 @@ body {
 div {
     background-color: rgba(30, 30, 30, 0.4); /* Mais transparente */
         position: relative;
-        padding: 50px;
+        padding: 30px;
         border-radius: 20px;
         text-align: center;
         box-shadow: 0 0 20px rgba(170, 100, 255, 0.2); /* leve glow lilás */
-        max-width: 500px;
+        max-width: 700px;
         margin: auto;
         margin-top: 10vh;
         animation: flutuar 3s ease-in-out infinite;
@@ -170,3 +170,28 @@ div {
     background-color: #ffffff; /* Cor mais suave ao passar o mouse */
     transform: scale(1.05);
 }
+
+input[type="text"] {
+    background-color: #1f1f1f; /* cinza escuro elegante */
+    border: 2px solid #5c5c5c; /* borda discreta */
+    border-radius: 8px; /* cantos arredondados */
+    padding: 10px 15px;
+    color: #fff; /* texto branco */
+    font-size: 16px;
+    outline: none; /* tira aquele azul feio ao clicar */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #8a2be2; /* roxo vibrante ao focar */
+    box-shadow: 0 0 5px #8a2be2;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px; /* espaço entre o input e o botão */
+    justify-content: center; /* centraliza eles */
+    align-items: center; /* alinha verticalmente */
+    margin-top: 20px; /* espaço pra separar do título */
+}
+

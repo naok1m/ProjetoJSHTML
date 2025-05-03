@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Afazeres</title>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <div>
-        <h1>Ops.. ainda vou fazer!</h1>
+    <a href="/homeScreen.html" class="HOME-BTN">Tela de Início</a>
+    <section class="list-container">
+    <h1>Minha Lista</h1>
+
+    <div class = "form-container"> 
+    <input type= "text" class = "input-tarefa">
+     <button class="btn-tarefa">Adicionar nova tarefa</button>
+     
+     <ul class = "tarefas"></ul>
     </div>
+    </section>
+    <script src = "../js/lista.js"></script>
 </body>
 </html>
