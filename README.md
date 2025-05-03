@@ -1,4 +1,4 @@
 # Timer
-Projeto feito em JavaScript aprendido na Udemy. Timer estilizado com CSS
+Projeto feito em JavaScript e HTML, estilizado com CSS.
 
 ![alt text](/assets/image.png)
