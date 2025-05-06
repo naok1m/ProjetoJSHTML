@@ -8,7 +8,7 @@
         padding: 50px;
         border-radius: 20px;
         text-align: center;
-        box-shadow: 0 0 20px rgba(170, 100, 255, 0.2); /* leve glow lilás */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* leve glow lilás */
         max-width: 500px;
         margin: auto;
         margin-top: 10vh;
@@ -16,23 +16,23 @@
         cursor: move;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1); /* toque de leve contorno */
+        border: 1px solid rgba(250, 250, 250, 0.747); /* toque de leve contorno */
     }
     
-}
+
 
 @keyframes flutuar {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
-
+}
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 15px;
     color: rgba(255, 255, 255, 0.85); 
-    text-shadow: 0 0 4px rgba(186, 146, 255, 0.3);/* Cor do título em branco */
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);/* Cor do título em branco */
 }
 
 @keyframes fadeIn {
@@ -42,17 +42,18 @@ h1 {
 
 .relogio {
     font-size: 4rem;
+    width: 10ch;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     margin-bottom: 50px;
     color: #ffffff; /* Texto branco para boa visibilidade */
     animation: fadeIn 1s ease-out;
     letter-spacing: 2px;
-    background-color: rgba(18, 18, 18, 0); /* Fundo mais escuro com opacidade */
+    background-color: rgba(255, 255, 255, 0); /* Fundo mais escuro com opacidade */
     padding: 20px;
     border-radius: 15px;
     display: inline-block;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Sombra mais forte para contraste */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Sombra mais forte para contraste */
 }
 
 button {
@@ -60,8 +61,8 @@ button {
     font-size: 1.2rem;
     border: none;
     border-radius: 20px;
-    padding: 12px 25px;
-    margin: 5px;
+    padding: 8px 8px;
+    margin: 3px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     background-color: #333333; /* Cor de fundo mais escura para os botões */
@@ -79,25 +80,27 @@ button:hover {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: rgba(255, 255, 255, 0.85);
-    background: linear-gradient(to bottom right, #000000, #2c003e);
-    display: list-item;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    color: rgba(250, 250, 250, 0.85);
+    background: linear-gradient(to bottom right, #000000, #000000);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
 }
 
-div {
-    background-color: rgba(30, 30, 30, 0.4); /* Mais transparente */
+
+div.caixa {
+    background-color: rgba(30, 30, 30, 0.4); 
         position: relative;
         padding: 30px;
         border-radius: 20px;
         text-align: center;
-        box-shadow: 0 0 20px rgba(170, 100, 255, 0.2); /* leve glow lilás */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.534); 
         max-width: 700px;
         margin: auto;
         margin-top: 10vh;
@@ -105,8 +108,8 @@ div {
         cursor: move;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1); /* toque de leve contorno */
-    }
+        border: 1px solid rgba(255, 255, 255, 0.1); 
+    } 
 
 .titulo {
     font-size: 2.5rem;
@@ -173,18 +176,18 @@ div {
 
 input[type="text"] {
     background-color: #1f1f1f; /* cinza escuro elegante */
-    border: 2px solid #5c5c5c; /* borda discreta */
-    border-radius: 8px; /* cantos arredondados */
-    padding: 10px 15px;
-    color: #fff; /* texto branco */
+    border: 2px solid #eeeeee; /* borda discreta */
+    border-radius: 10px; /* cantos arredondados */
+    padding: 10px 18px;
+    color: #ffffff; /* texto branco */
     font-size: 16px;
     outline: none; /* tira aquele azul feio ao clicar */
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input[type="text"]:focus {
-    border-color: #8a2be2; /* roxo vibrante ao focar */
-    box-shadow: 0 0 5px #8a2be2;
+    border-color: #ffffff; /* roxo vibrante ao focar */
+    box-shadow: 0 0 5px #fafafa;
 }
 
 .form-container {
@@ -193,5 +196,27 @@ input[type="text"]:focus {
     justify-content: center; /* centraliza eles */
     align-items: center; /* alinha verticalmente */
     margin-top: 20px; /* espaço pra separar do título */
+    padding: 20px;
 }
 
+.tarefas {
+    width: 100%;
+    max-width: 400px;     /* Limita a largura para manter visual limpo */
+    margin: 0 auto;        /* Centraliza horizontalmente */
+    list-style-position: inside;
+    text-align: left;      /* Alinha o texto dos <li> à esquerda */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .tarefas li {
+    font-size: 25px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .tarefas li:last-child {
+    border-bottom: none;
+  }
